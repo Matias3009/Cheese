@@ -1,5 +1,5 @@
 body{
-	background-color: #CFCDC6;
+	background-color: #e0c0cd;
 }
 .nn{
 	height: 100%;
@@ -13,17 +13,28 @@ body{
 	grid-area: headd;
 	text-align: center;
 
-	background-color: #6B696B;
-	color: whitesmoke;
+	background-color: white;
+	color: darkgray;
 
 }
 .catalog{
-	background-color:#7e868b;
+	background-color:white;
 	width:80%;
 	justify-self: center;
 	display: inline-block;
 	border-radius:0.3rem;
 	height:1.5rem;
+
+	transition: background-color 0.3s, width 0.1s;
+
+	box-shadow: 0 0 0.5rem 0.2rem rgba(0, 0, 0, 0.19);
+}
+.catalog:hover{
+	background-color:rgb(240,240,240);
+	cursor: pointer;
+}
+.catalog:active{
+	width:75%;
 }
 
 .foot{
@@ -33,9 +44,7 @@ body{
 }
 .menu{
 	grid-area:menud;
-	background-color:#B3B4AB;
-	border-bottom-right-radius: 1rem;
-	border-top-right-radius: 1rem;
+	background-color:white;
 
 	text-align: center;
 	justify-content: center;
@@ -69,7 +78,7 @@ body{
 	overflow: hidden;
 	text-align: center;
 
-	background-color: white;
+	background-color: #efefef;
 	transform: rotate(0deg);
 
 	
@@ -101,15 +110,18 @@ img{
 	padding:0px;
 	border-radius: 0px;
 	border: transparent;
-	background-color: white;
-	color: darkgray;
+	background-color: #efefef;
+	color: #333333;
 	grid-row-start: 2;
 
 	grid-row-end: 2;
 
+	transition: font-size 0.3s;
+
 }
 .buyB:hover{
 	opacity:0.8;
+	font-size: 1rem;
 }
 .buyB:active{
 	opacity:0.4;
