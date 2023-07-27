@@ -119,7 +119,7 @@ img{
 }
 
 
-@media screen and (max-width: 1150px)
+@media only screen and (max-width: 1150px)
 and (min-width:780px){
 	.objects{
 		grid-template-columns: 1fr 1fr;
@@ -132,7 +132,7 @@ and (min-width:780px){
 	}
 }
 
-@media screen and (max-width: 780px){
+@media only screen and (max-width: 780px){
 	.objects{
 		grid-template-columns: 1fr;
 	}
