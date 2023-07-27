@@ -117,3 +117,29 @@ img{
 	"footd footd";
 	
 }
+
+
+@media screen and (max-width: 1150px)
+and (min-width:780px){
+	.objects{
+		grid-template-columns: 1fr 1fr;
+	}
+	.menu{
+		display: none;
+	}
+	.container{
+		grid-template-columns: 0% 100%;
+	}
+}
+
+@media screen and (max-width: 780px){
+	.objects{
+		grid-template-columns: 1fr;
+	}
+	.menu{
+		display: none;
+	}
+	.container{
+		grid-template-columns: 0% 100%;
+	}
+}
